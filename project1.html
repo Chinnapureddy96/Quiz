@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz Application</title>
+        <style>
+            body{
+                font-size: xx-large;
+
+            }
+            #submitBtn{
+                margin: auto;
+                text-align: center;
+                display: block;
+                font-size: large;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>Mad Math Questions</h1>
+        <b>Q1.What is 2+3?</b><br>
+        <input type="radio" name="quetion1" id="correct1">5<br>
+        <input type="radio" name="quetion1">1<br>
+        <input type="radio" name="quetion1">4<br>
+        <input type="radio" name="quetion1">2<br>
+        <b>Q2.What is 30+3?</b><br>
+        <input type="radio" name="quetion2">13<br>
+        <input type="radio" name="quetion2">26<br>
+        <input type="radio" name="quetion2" id="correct2">33<br>
+        <input type="radio" name="quetion2">40<br>
+        <b>Q3.What is 44*4?</b><br>
+        <input type="radio" name="quetion3">164<br>
+        <input type="radio" name="quetion3">267<br>
+        <input type="radio" name="quetion3" id="correct3">176<br>
+        <input type="radio" name="quetion3">444<br>
+        <b>Q4.What is 2/5?</b><br>
+        <input type="radio" name="quetion4">0.5<br>
+        <input type="radio" name="quetion4" id="correct4">0.4<br>
+        <input type="radio" name="quetion4">1<br>
+        <input type="radio" name="quetion4">2.5<br>
+        <b>Q5.What is 100%4?</b><br>
+        <input type="radio" name="quetion5">25<br>
+        <input type="radio" name="quetion5">0.1<br>
+        <input type="radio" name="quetion5">0.5<br>
+        <input type="radio" name="quetion5" id="correct5">0<br>
+        <b>Q6.What is 2*(5+5)/10-2?</b><br>
+        <input type="radio" name="quetion6" id="correct6">0<br>
+        <input type="radio" name="quetion6">5<br>
+        <input type="radio" name="quetion6">-2<br>
+        <input type="radio" name="quetion6">10<br>
+        <b>Q7.What is 10%2*(240-86)/1040?</b><br>
+        <input type="radio" name="quetion7" id="correct7">0<br>
+        <input type="radio" name="quetion7">5<br>
+        <input type="radio" name="quetion7">770<br>
+        <input type="radio" name="quetion7">250<br>
+        <b>Q8.What is the first priority?</b><br>
+        <input type="radio" name="quetion8">*<br>
+        <input type="radio" name="quetion8">+<br>
+        <input type="radio" name="quetion8" id="correct8">()<br>
+        <input type="radio" name="quetion8">/<br>
+        <b>Q9.Who is invented maths?</b><br>
+        <input type="radio" name="quetion9">Einstein<br>
+        <input type="radio" name="quetion9" id="correct9">Aryabhata<br>
+        <input type="radio" name="quetion9">Edison<br>
+        <input type="radio" name="quetion9">Galileo Galilei<br>
+        <b>Q10.What is order of operations?</b><br>
+        <input type="radio" name="quetion10">*,+,-,/<br>
+        <input type="radio" name="quetion10">(),+,*,-<br>
+        <input type="radio" name="quetion10">/,-,*,+<br>
+        <input type="radio" name="quetion10" id="correct10">(),/,*,+<br>
+
+        <br><input id="submitBtn" style="margin: auto ;"   type="submit" name="submit" value="submitquiz" onclick="result()">
+
+
+        <script type="text/javascript">
+            function result(){
+                var score=0;
+                if(document.getElementById('correct1').checked){
+                    score++;
+                }
+                if(document.getElementById('correct2').checked){
+                    score++;
+                }
+                if(document.getElementById('correct3').checked){
+                    score++;
+                }
+                if(document.getElementById('correct4').checked){
+                    score++;
+                }
+                if(document.getElementById('correct5').checked){
+                    score++;
+                }
+                if(document.getElementById('correct6').checked){
+                    score++;
+                }
+                if(document.getElementById('correct7').checked){
+                    score++;
+                }
+                if(document.getElementById('correct8').checked){
+                    score++;
+                }
+                if(document.getElementById('correct9').checked){
+                    score++;
+                }
+                if(document.getElementById('correct10').checked){
+                    score++;
+                }
+                // alert("Your score is:"+score);
+                document.write("Your score is :"+score);
+            }
+        </script>
+    </body>
+</html>

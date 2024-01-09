@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz Application</title>
+        <style>
+            body{
+                font-size: xx-large;
+
+            }
+            #submitBtn{
+                margin: auto;
+                text-align: center;
+                display: block;
+                font-size: large;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1>GK QUESTION RAILWAY </h1>
+        <b>Q1When did the first train run in india?</b><br>
+        <input type="radio" name="quetion1">April 19, 1854<br>
+        <input type="radio" name="quetion1"id="correct1">16 April 1853<br>
+        <input type="radio" name="quetion1">16 April 1859<br>
+        <input type="radio" name="quetion1">26 April 1856 <br>
+        <b>Q2.Which is the largest public sector undertaking of India?</b><br>
+        <input type="radio" name="quetion2">Transport Equipment<br>
+        <input type="radio" name="quetion2"id="correct2">Indian Railways<br>
+        <input type="radio" name="quetion2">Tourist Equipment <br>
+        <input type="radio" name="quetion2">Financial Instruments<br>
+        <b>Q3.Which place is the Indian rail network in Asia?</b><br>
+        <input type="radio" name="quetion3">8th<br>
+        <input type="radio" name="quetion3"id="correct3">2nd<br>
+        <input type="radio" name="quetion3">3rd<br>
+        <input type="radio" name="quetion3">1st<br>
+        <b>Q4.Which state of Indian has the highest rail line?</b><br>
+        <input type="radio" name="quetion4"id="correct4">Uttar Pradesh<br>
+        <input type="radio" name="quetion4">Maharashtra<br>
+        <input type="radio" name="quetion4">Rajasthan<br>
+        <input type="radio" name="quetion4">Haryana<br>
+        <b>Q5.When was the railway board established?</b><br>
+        <input type="radio" name="quetion5">1915<br>
+        <input type="radio" name="quetion5">1903<br>
+        <input type="radio" name="quetion5">1899<br>
+        <input type="radio" name="quetion5"id="correct5">1905<br>
+        <b>Q6.Which state of India does not have a railway line?</b><br>
+        <input type="radio" name="quetion6"id="correct6">Meghalaya<br>
+        <input type="radio" name="quetion6">Telangana<br>
+        <input type="radio" name="quetion6">Odisha<br>
+        <input type="radio" name="quetion6">Haryana<br>
+        <b>Q7.In which year  did the train start in India?</b><br>
+        <input type="radio" name="quetion7">1953<br>
+        <input type="radio" name="quetion7"id="correct7">1853<br>
+        <input type="radio" name="quetion7">1895<br>
+        <input type="radio" name="quetion7">1858<br>
+        <b>Q8.When did the first rail run in the World?</b><br>
+        <input type="radio" name="quetion8">1815<br>
+        <input type="radio" name="quetion8"id="correct8">1825<br>
+        <input type="radio" name="quetion8">1835<br>
+        <input type="radio" name="quetion8">1855<br>
+        <b>Q9.What is the place of Indian railway network in the world?</b><br>
+        <input type="radio" name="quetion9">8th<br>
+        <input type="radio" name="quetion9" >2nd<br>
+        <input type="radio" name="quetion9">3rd<br>
+        <input type="radio" name="quetion9"id="correct9">4th<br>
+        <b>Q10.What was the distance covered by India's first train?</b><br>
+        <input type="radio" name="quetion10">44KM<br>
+        <input type="radio" name="quetion10" id="correct10">34KM<br>
+        <input type="radio" name="quetion10">24KM<br>
+        <input type="radio" name="quetion10">36KM<br>
+
+        <br><input id="submitBtn" style="margin: auto ;"   type="submit" name="submit" value="submitquiz" onclick="result()">
+
+        <script type="text/javascript">
+            function result(){
+                var score=0;
+                if(document.getElementById('correct1').checked){
+                    score++;
+                }
+                if(document.getElementById('correct2').checked){
+                    score++;
+                }
+                if(document.getElementById('correct3').checked){
+                    score++;
+                }
+                if(document.getElementById('correct4').checked){
+                    score++;
+                }
+                if(document.getElementById('correct5').checked){
+                    score++;
+                }
+                if(document.getElementById('correct6').checked){
+                    score++;
+                }
+                if(document.getElementById('correct7').checked){
+                    score++;
+                }
+                if(document.getElementById('correct8').checked){
+                    score++;
+                }
+                if(document.getElementById('correct9').checked){
+                    score++;
+                }
+                if(document.getElementById('correct10').checked){
+                    score++;
+                }
+                // alert("Your score is:"+score);
+                document.write("Your score is :"+score);
+            }
+        </script>
+    </body>
+</html>

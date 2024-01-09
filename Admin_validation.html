@@ -1,0 +1,25 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <script>
+            function validateform(){
+                var name=document.Loginform.name.value;
+                var password=document.Loginform.password.value;
+                if(name == null || name == ""){
+                    alert("Name can't be blank");
+                }
+                else if(password.length < 6){
+                    alert("password must be at least 6 charecters long")
+
+                }
+            }
+        </script>
+    </head>
+    <body>
+        <form name="Loginform" onsubmit="return validateform()">
+            Name: <input type="text" name="name" placeholder="Enter your name"><br>
+            password:<input type= "password" name="password" placeholder="Enter your password"><br>
+            <input type="submit" value="login">
+        </form>
+    </body>
+</html>

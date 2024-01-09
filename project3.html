@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Quiz Application</title>
+        <style>
+            body{
+                font-size: xx-large;
+
+            }
+            #submitBtn{
+                margin: auto;
+                text-align: center;
+                display: block;
+                font-size: large;
+                color: blue;
+            }
+        </style>
+    </head>
+    <body>
+        <h1 style="background-color:#d4e3d3;">GK ABOUT CRICKET </h1>
+        <b>Q1.who has scored most runs in a single season of ipl?</b><br>
+        <input type="radio" name="quetion1">Chriys Gayle<br>
+        <input type="radio" name="quetion1">ABD<br>
+        <input type="radio" name="quetion1">David Warner<br>
+        <input type="radio" name="quetion1"id="correct1">Virat Kohli<br>
+        <b>Q2.When was first ICC cricket World Cup started?</b><br>
+        <input type="radio" name="quetion2"id="correct2">1975<br>
+        <input type="radio" name="quetion2">1972<br>
+        <input type="radio" name="quetion2">1986<br>
+        <input type="radio" name="quetion2">1979<br>
+        <b>Q3.Where did India play its 1st one day international match?</b><br>
+        <input type="radio" name="quetion3">Lords<br>
+        <input type="radio" name="quetion3"id="correct3">Headingley<br>
+        <input type="radio" name="quetion3">Taunton<br>
+        <input type="radio" name="quetion3">The Oval<br>
+        <b>Q4.How many players are there in Cricket team?</b><br>
+        <input type="radio" name="quetion4">7<br>
+        <input type="radio" name="quetion4">9<br>
+        <input type="radio" name="quetion4">5<br>
+        <input type="radio" name="quetion4"id="correct4">11<br>
+        <b>Q5.Which cricketer had scored highest individual score in ODI cricket matches?</b><br>
+        <input type="radio" name="quetion5"id="correct5">Rohit Sharma<br>
+        <input type="radio" name="quetion5">Chris Gayle<br>
+        <input type="radio" name="quetion5">Martin Guptill<br>
+        <input type="radio" name="quetion5">Virender Sehwag<br>
+        <b>Q6.Which cricketer had scored fastest century in ODI cricket matches?</b><br>
+        <input type="radio" name="quetion6">Vivian Richards<br>
+        <input type="radio" name="quetion6">Corey Anderson<br>
+        <input type="radio" name="quetion6">Shahid Afridi<br>
+        <input type="radio" name="quetion6"id="correct6">AB de villiers<br>
+        <b>Q7.Which cricketer had scored highest individual score for India in T20 cricket matches?</b><br>
+        <input type="radio" name="quetion7">Eoin Morgan<br>
+        <input type="radio" name="quetion7"id="correct7">Virat Kohli<br>
+        <input type="radio" name="quetion7">Ben Stokes<br>
+        <input type="radio" name="quetion7">Rohit Sharma<br>
+        <b>Q8.Who was the ICC's emerging player of the year 2018?</b><br>
+        <input type="radio" name="quetion8">Virat Kohli<br>
+        <input type="radio" name="quetion8"id="correct8">Rishabh pant<br>
+        <input type="radio" name="quetion8">Rohit Sharma<br>
+        <input type="radio" name="quetion8">KL Rahul<br>
+        <b>Q9.In which year was Sachin Tendulkar given the Arjuna Award?</b><br>
+        <input type="radio" name="quetion9">1993<br>
+        <input type="radio" name="quetion9" id="correct9">1994<br>
+        <input type="radio" name="quetion9">1995<br>
+        <input type="radio" name="quetion9">1996<br>
+        <b>Q10.How many teams are Participating in the ICC World Cuo 2019?</b><br>
+        <input type="radio" name="quetion10">9<br>
+        <input type="radio" name="quetion10">8<br>
+        <input type="radio" name="quetion10">12<br>
+        <input type="radio" name="quetion10" id="correct10">10<br>
+
+        <br><input id="submitBtn" style="margin: auto ;"   type="submit" name="submit" value="submitquiz" onclick="result()">
+
+        <script type="text/javascript">
+            function result(){
+                var score=0;
+                if(document.getElementById('correct1').checked){
+                    score++;
+                }
+                if(document.getElementById('correct2').checked){
+                    score++;
+                }
+                if(document.getElementById('correct3').checked){
+                    score++;
+                }
+                if(document.getElementById('correct4').checked){
+                    score++;
+                }
+                if(document.getElementById('correct5').checked){
+                    score++;
+                }
+                if(document.getElementById('correct6').checked){
+                    score++;
+                }
+                if(document.getElementById('correct7').checked){
+                    score++;
+                }
+                if(document.getElementById('correct8').checked){
+                    score++;
+                }
+                if(document.getElementById('correct9').checked){
+                    score++;
+                }
+                if(document.getElementById('correct10').checked){
+                    score++;
+                }
+                // alert("Your score is:"+score);
+                document.write("Your score is :"+score);
+            }
+        </script>
+    </body>
+</html>
